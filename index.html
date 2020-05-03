@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Responsive Quiz App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <!-- quiz body -->
+    <div class="main">
+        <div class="container">
+            <div class="section">
+                <nav>
+                    <ul class="first-nav-ul">
+                        <li>Find me on github</li>
+                    </ul> 
+                </nav>
+            
+                <div class="intro-box">
+                    <header>
+                        <p class="small-header">A responsive quiz app.</p>
+                        <h1 class="big-header">Test your knowledge in <br> English and HTML</h1>
+                    </header>
+                    <button class="start-quiz-btn">Start Quiz</button>
+                </div>
+            </div> 
+            
+             
+                
+        <div class="question-section">
+            
+                    
+        <span class="scorebox" style="color:white;  float:right; margin-bottom:5px;  font-size: 1.5rem; top:0; right:0;">
+           Total score = <span class="score">0 / 5</span>
+        </span>
+               
+            <!-- <div class="divider"></div> -->
+                
+                
+            <div class="all-questions">
+                    <div class="question-1 li-styling">
+                        <h3>What is  HTML</h3>
+                        <ul class="question-1-ul">
+                            <li onclick="questionOne(this);">Hypertext Tranfer Protocol</li>
+                            <li onclick="questionOne(this);">Hypertext Transmission Protocol</li>
+                            <li onclick="questionOne(this);">Hypertext Technical Protocal</li>
+                            
+                        </ul>
+                        
+                    </div> 
+                    
+                    <div class="question-2 li-styling">
+                        <h3>What is the plural form of Stadium?</h3>
+                        <ul class="question-2-ul">
+                            <li onclick="questionTwo(this);">Stadiums</li>
+                            <li onclick="questionTwo(this);">Stadius</li>
+                            <li onclick="questionTwo(this);">Stadia</li>
+                        </ul>
+                        
+                    </div> 
+                    
+                    <div class="question-3 li-styling">
+                        <h3>Which is correct?</h3>
+                        <ul class="question-3-ul">
+                            <li onclick="questionThree(this);">An img tag has a closing tag</li>
+                            <li onclick="questionThree(this);">An img tag is a self closing tag</li>
+                            <li onclick="questionThree(this);">An img tag does not have a tag</li>
+                        </ul>
+                        
+                    </div> 
+                    
+                    <div class="question-4 li-styling">
+                        <h3>Which of the following is the correct way to start a formal letter?</h3>
+                        <ul class="question-4-ul">
+                            <li onclick="questionFour(this);">To whom it may concern</li>
+                            <li onclick="questionFour(this);">Dear Sir/Madam</li>
+                            <li onclick="questionFour(this);">Hi Baby</li>
+                        </ul>
+                        
+                    </div> 
+                    
+                    <div class="question-5 li-styling">
+                        <h3>What HTML attribute prevents a form from submitting an empty field(s) </h3>
+                        <ul class="question-5-ul">
+                            <li onclick="questionFive(this);">prevent</li>
+                            <li onclick="questionFive(this);">restrict</li>
+                            <li onclick="questionFive(this);">required</li>
+                        </ul>
+
+                    </div> 
+                    
+            
+
+            </div>
+              <!-- <button class="nextBtn">Next</button> -->
+            <div class="navigationBtn">
+                <button class="previousBtn">Previous</button> 
+                &nbsp;
+                &nbsp;
+               <button class="nextBtn">Next</button>             
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    </body>
+</html>
