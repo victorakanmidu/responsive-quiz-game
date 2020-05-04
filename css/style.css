@@ -11,19 +11,16 @@ body{
     width: 100%; */
 }
 .container{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
 }
-nav{
-    padding: 1.2em;
-}
+
 .first-nav-ul{
 display: flex;
-justify-content: space-around;
-/* width: 30rem; */
+justify-content: space-evenly;
+/*width: 30rem; */
 color:whitesmoke;
 list-style-type: none;
-letter-spacing: .1em;
+letter-spacing: .1em; 
 
 }
 
@@ -46,7 +43,7 @@ letter-spacing: .1em;
 }
 .big-header{
     color:whitesmoke;
-    font-size: 5rem;
+    font-size: 5em;
     font-weight: 300;
 }
 .start-quiz-btn{
@@ -55,7 +52,7 @@ letter-spacing: .1em;
     margin-bottom: 2em;
     width: fit-content;
     padding: .5em;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     letter-spacing: .1em;
     border-radius: .5em;
     background-color: transparent;
@@ -80,7 +77,7 @@ letter-spacing: .1em;
     /* padding-right: 1rem; */
     max-width: 31rem;
     color: #333333;
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: 1px;
     height: auto;
     overflow: hidden;
@@ -117,7 +114,7 @@ letter-spacing: .1em;
     width:150rem;
     height: fit-content;
     background-color: white;
-    padding: 1em;
+    /* padding: 1em; */
     margin: 0 auto;
     /* border: 1px solid silver; */
     /* margin-left:10px; */
