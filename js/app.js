@@ -192,7 +192,7 @@ function questionFive(index) {
 const questionContainer = document.querySelector('.all-questions');
 const uls = document.querySelectorAll('.all-questions div');
 
- alert(uls.children);
+//  alert(uls.children);
 
 const nextBtn = document.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.previousBtn');
