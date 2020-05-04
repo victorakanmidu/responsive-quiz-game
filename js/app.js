@@ -192,20 +192,23 @@ function questionFive(index) {
 const questionContainer = document.querySelector('.all-questions');
 const uls = document.querySelectorAll('.all-questions div');
 
+ alert(uls.children);
+
 const nextBtn = document.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.previousBtn');
 let ulCounter = 0;
 const size = uls[0].clientWidth;
 
 questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
+
 nextBtn.addEventListener('click', () => {
     questionContainer.style.transition = 'transform 0.4s ease-in-out';
     ulCounter++;
     questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
     
-        if (ulCounter == uls.length && uls.length == uls.length + 1) {
-            alert("This is the end");
-        } 
+       
+           
+        
 });
 
 
@@ -228,17 +231,17 @@ prevBtn.addEventListener('click', () => {
     const navigationBox = document.querySelector('.navigationBtn');
     const scoreBox = document.querySelector('.scorebox');
 
-    questionContainer.style.display = 'none';
-    navigationBox.style.display = 'none';
-    scoreBox.style.display = 'none';
+    // questionContainer.style.display = 'none';
+    // navigationBox.style.display = 'none';
+    // scoreBox.style.display = 'none';
 
-    startBtn.addEventListener('click', function () {
-        introBox.classList.add('removeIntroBox') ? startBtn.innerHTML = "End Quiz" : startBtn.innerHTML = "Start Quiz";
-        questionSection.classList.add('question-section');
+    // startBtn.addEventListener('click', function () {
+    //     introBox.classList.add('removeIntroBox') ? startBtn.innerHTML = "End Quiz" : startBtn.innerHTML = "Start Quiz";
+    //     questionSection.classList.add('question-section');
         
-        questionContainer.style.display = 'block';
-        navigationBox.style.display = 'block';
-    });
+    //     questionContainer.style.display = 'block';
+    //     navigationBox.style.display = 'block';
+    // });
 
 
 
