@@ -74,7 +74,7 @@ const showResult = () => {
     navigationBox.style.display = 'none'
     const youDidWell = 'Congratulations! you passed';
     const notSoGood = 'Maybe you should change career?';
-    let msg = `<h2>Game ended</h2> 
+    let msg = `<h2>Quiz ended</h2> 
         <div>`;
     
     if (score >= uls.length - 2) {
