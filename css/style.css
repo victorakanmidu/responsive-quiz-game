@@ -162,7 +162,7 @@ button:hover{
 
 @media screen and (max-width:321px){
     h3{
-        width: 70%;
+        width: fit-content;
         font-weight: 600;
         margin: 1em;
     }
