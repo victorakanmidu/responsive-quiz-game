@@ -6,10 +6,7 @@ body{
     font-family: 'Roboto';
 }
 
-.section{
-    /* height: 100vh;
-    width: 100%; */
-}
+
 .container{
     margin: 1em;
 }
@@ -21,7 +18,7 @@ justify-content: space-evenly;
 color:whitesmoke;
 list-style-type: none;
 letter-spacing: .1em; 
-
+visibility:hidden;
 }
 
 .intro-box{
@@ -235,6 +232,15 @@ button:hover{
 
 
 } 
+
+.scorebox{
+    color:white;  float:right; margin-bottom:5px;  font-size: 1em; top:0; right:0;
+}
+
+.totalQuestions{
+    color:white;
+    
+}
 
 .result{
     width:30em;

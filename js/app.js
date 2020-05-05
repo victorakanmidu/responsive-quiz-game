@@ -15,13 +15,25 @@ const navigationBox = document.querySelector('.navigationBtn');
 const scoreBox = document.querySelector('.scorebox');
 const result = document.querySelector('.result');
 
-// Questions animation
+
+// Starts the quiz
+startBtn.addEventListener('click', function () {
+    introBox.style.display = 'none';
+    questionSection.style.display = 'block';
+    navigationBox.style.visibility = 'visible';
+    document.querySelector('.first-nav-ul').style.visibility = 'visible';
+});
+
+
+
+// QUESTIONS ANIMATION
 const questionContainer = document.querySelector('.all-questions');
 const uls = document.querySelectorAll('.all-questions div');
 const nextBtn = document.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.previousBtn');
 let ulCounter = 0;
 const size = uls[0].clientWidth;
+
 
 questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
@@ -51,13 +63,25 @@ prevBtn.addEventListener('click', () => {
 
 
 
+// Hide questions to display hero
+questionSection.style.display = 'none';
+navigationBox.style.visibility = 'hidden';
+
+// Show result after quiz ends
 const showResult = () => {
     questionSection.style.display = 'none';
     navigationBox.style.display = 'none'
-
-    const msg = `<h2>Game ended</h2> 
-        <div>
-           <p>You scored: ${score} point(s)</p>
+    const youDidWell = 'Congratulations! you passed';
+    const notSoGood = 'Maybe you should change career?';
+    let msg = `<h2>Game ended</h2> 
+        <div>`;
+    
+    if (score >= uls.length - 2) {
+        msg += youDidWell;
+    } else {
+        msg += notSoGood; 
+    }
+       msg += `<p>You scored: ${score} point(s)</p>
            
            <button onclick="restartGame();">Restart</button>
         </div>
@@ -75,18 +99,6 @@ const restartGame = () => {
     score = 0;
     window.location = '';
 }
-
-// questionContainer.style.display = 'none';
-// navigationBox.style.display = 'none';
-// scoreBox.style.display = 'none';
-
-// startBtn.addEventListener('click', function () {
-//     introBox.classList.add('removeIntroBox') ? startBtn.innerHTML = "End Quiz" : startBtn.innerHTML = "Start Quiz";
-//     questionSection.classList.add('question-section');
-
-//     questionContainer.style.display = 'block';
-//     navigationBox.style.display = 'block';
-// });
 
 
 
