@@ -39,6 +39,7 @@ questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
 // when clicked, goes to the next question
 nextBtn.addEventListener('click', () => {
+    prevBtn.style.visibility = 'visible';
     questionContainer.style.transition = 'transform 0.4s ease-in-out';
     ulCounter++;
     if (ulCounter > uls.length - 1) {
@@ -58,7 +59,7 @@ prevBtn.addEventListener('click', () => {
         questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
     } else {
-      
+        prevBtn.style.visibility = 'hidden';
     }
 });
 
@@ -70,6 +71,7 @@ navigationBox.style.visibility = 'hidden';
 
 // Show result after quiz ends
 const showResult = () => {
+    
     questionSection.style.display = 'none';
     navigationBox.style.display = 'none'
     const youDidWell = 'Congratulations! you passed';
@@ -106,7 +108,9 @@ const restartGame = () => {
 // Questions 1 - 5 functions   
 
 function questionOne(index) {
-
+    
+    prevBtn.style.visibility = 'visible';
+    
     // Question and Options array
     const questions = [
         {
