@@ -28,9 +28,9 @@ visibility:hidden;
     align-items: center;
     text-align: center;
     /* width: 40em; */
-    /* height:fit-content; */
+    height:fit-content;
     /* margin: 5em auto; */
-    word-wrap: normal;
+    word-wrap: break-word;
 }
 
 .small-header{
@@ -188,7 +188,7 @@ button:hover{
 
 @media screen and (max-width:321px){
     h3{
-        width: 100%;
+        width: 90%;
         font-weight: 600;
         margin: 1em;
     }
