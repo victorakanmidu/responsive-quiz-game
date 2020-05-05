@@ -16,16 +16,6 @@ const scoreBox = document.querySelector('.scorebox');
 const result = document.querySelector('.result');
 
 
-// Starts the quiz
-startBtn.addEventListener('click', function () {
-    introBox.style.display = 'none';
-    questionSection.style.display = 'block';
-    navigationBox.style.visibility = 'visible';
-    document.querySelector('.first-nav-ul').style.visibility = 'visible';
-});
-
-
-
 // QUESTIONS ANIMATION
 const questionContainer = document.querySelector('.all-questions');
 const uls = document.querySelectorAll('.all-questions div');
@@ -33,8 +23,18 @@ const nextBtn = document.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.previousBtn');
 let ulCounter = 0;
 const size = uls[0].clientWidth;
+           
 
+// Starts the quiz
+startBtn.addEventListener('click', function () {
+    introBox.style.display = 'none';
+    questionSection.style.display = 'block';
+    navigationBox.style.visibility = 'visible';
+    document.querySelector('.first-nav-ul').style.visibility = 'visible';
+    prevBtn.style.visibility = 'hidden';
+});
 
+       
 questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
 // when clicked, goes to the next question
@@ -58,6 +58,7 @@ prevBtn.addEventListener('click', () => {
         questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
     } else {
+      
     }
 });
 
