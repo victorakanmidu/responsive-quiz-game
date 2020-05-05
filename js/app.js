@@ -1,4 +1,4 @@
-  
+
 let score = 0;
 let counter = document.querySelector('.score');
 const qbox = document.querySelectorAll('.all-questions div');
@@ -14,7 +14,7 @@ const questionSection = document.querySelector('.question-section');
 const navigationBox = document.querySelector('.navigationBtn');
 const scoreBox = document.querySelector('.scorebox');
 const result = document.querySelector('.result');
- 
+
 // Questions animation
 const questionContainer = document.querySelector('.all-questions');
 const uls = document.querySelectorAll('.all-questions div');
@@ -32,8 +32,8 @@ nextBtn.addEventListener('click', () => {
     if (ulCounter > uls.length - 1) {
         showResult();
     } else {
-        questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';  
-    }     
+        questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
+    }
 });
 
 
@@ -41,12 +41,12 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     questionContainer.style.transition = 'transform 0.4s ease-in-out';
     ulCounter--;
-    
+
     if (ulCounter < uls.length - 1) {
-        
+
     } else {
         questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
-    }        
+    }
 });
 
 
@@ -54,36 +54,44 @@ prevBtn.addEventListener('click', () => {
 const showResult = () => {
     questionSection.style.display = 'none';
     navigationBox.style.display = 'none'
-    
+
     const msg = `<h2>Game ended</h2> 
         <div>
            <p>You scored: ${score} point(s)</p>
+           
+           <button onclick="restartGame();">Restart</button>
         </div>
     `;
     result.style.color = 'white';
     result.style.display = 'flex';
     result.style.flexDirection = 'column';
     result.style.textAlign = 'center';
+    result.style.width = '80%';
     result.innerHTML = msg;
-    
- }
-    
-    // questionContainer.style.display = 'none';
-    // navigationBox.style.display = 'none';
-    // scoreBox.style.display = 'none';
 
-    // startBtn.addEventListener('click', function () {
-    //     introBox.classList.add('removeIntroBox') ? startBtn.innerHTML = "End Quiz" : startBtn.innerHTML = "Start Quiz";
-    //     questionSection.classList.add('question-section');
-        
-    //     questionContainer.style.display = 'block';
-    //     navigationBox.style.display = 'block';
-    // });
+}
+
+const restartGame = () => {
+    score = 0;
+    window.location = '';
+}
+
+// questionContainer.style.display = 'none';
+// navigationBox.style.display = 'none';
+// scoreBox.style.display = 'none';
+
+// startBtn.addEventListener('click', function () {
+//     introBox.classList.add('removeIntroBox') ? startBtn.innerHTML = "End Quiz" : startBtn.innerHTML = "Start Quiz";
+//     questionSection.classList.add('question-section');
+
+//     questionContainer.style.display = 'block';
+//     navigationBox.style.display = 'block';
+// });
 
 
 
 
- // Questions 1 - 5 functions   
+// Questions 1 - 5 functions   
 
 function questionOne(index) {
 

@@ -70,7 +70,7 @@ letter-spacing: .1em;
 .question-section{
     /* background-color: red; */
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 3em auto;
     /* padding-top: 1em; */
     /* padding: 1em; */
     /* padding-left: 1em; */
@@ -83,9 +83,7 @@ letter-spacing: .1em;
     overflow: hidden;
     
 }
-.question-section::-webkit-scrollbar{
-    /* display: none; */
-}
+
 
 .all-questions{
     /* background-color: pink; */
@@ -197,22 +195,6 @@ button:hover{
         font-weight: 600;
         margin: 1em;
     }
-   .question-section{
-    /* background-color: red; */
-    /* border-radius: 5px;
-    margin: 0 auto; */
-    /* padding-top: 1em; */
-    /* padding: 1em; */
-    /* padding-left: 1em; */
-    /* padding-right: 1rem; */
-    /* max-width: 40rem; */
-    /* color: #333333;
-    font-size: 1em;
-    letter-spacing: 1px;
-    height: auto;
-    overflow: hidden;
-     */
-}
 
 
 .all-questions{
@@ -249,6 +231,7 @@ button:hover{
     /* margin-left: 50px; */
     /* margin-right: 100px; */
 }
+
 
 
 } 
