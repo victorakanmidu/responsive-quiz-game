@@ -55,9 +55,9 @@ prevBtn.addEventListener('click', () => {
     ulCounter--;
 
     if (ulCounter < uls.length - 1) {
+        questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
 
     } else {
-        questionContainer.style.transform = 'translateX(' + (-size * ulCounter) + 'px)';
     }
 });
 
