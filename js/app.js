@@ -74,6 +74,7 @@ navigationBox.style.visibility = 'hidden';
 // Show result after quiz ends
 const showResult = () => {
     
+    document.querySelector('.first-nav-ul').style.visibility = 'hidden';
     questionSection.style.display = 'none';
     navigationBox.style.display = 'none'
     const youDidWell = 'Congratulations! you passed';
