@@ -14,7 +14,9 @@ const questionSection = document.querySelector('.question-section');
 const navigationBox = document.querySelector('.navigationBtn');
 const scoreBox = document.querySelector('.scorebox');
 const result = document.querySelector('.result');
+const qOptions = document.querySelectorAll('.all-questions div ul');
 
+// alert(qOptions[0]);
 
 // QUESTIONS ANIMATION
 const questionContainer = document.querySelector('.all-questions');
@@ -135,6 +137,8 @@ function questionOne(index) {
         score++;
         counter.innerHTML = score + ' / ' + qbox.length;
     } else {
+        qOptions[0].children[0].style.backgroundColor = 'green';
+        qOptions[0].children[0].style.color = 'white';
         index.style.backgroundColor = 'red';
         index.style.color = 'white';
         q1.classList.add('noClicking');
@@ -171,6 +175,8 @@ function questionTwo(index) {
         score++;
         counter.innerHTML = score + ' / ' + qbox.length;
     } else {
+        qOptions[1].children[2].style.backgroundColor = 'green';
+        qOptions[1].children[2].style.color = 'white';
         index.style.backgroundColor = 'red';
         index.style.color = 'white';
         q2.classList.add('noClicking');
@@ -207,6 +213,8 @@ function questionThree(index) {
         score++;
         counter.innerHTML = score + ' / ' + qbox.length;
     } else {
+        qOptions[2].children[1].style.backgroundColor = 'green';
+        qOptions[2].children[1].style.color = 'white';
         index.style.backgroundColor = 'red';
         index.style.color = 'white';
         q3.classList.add('noClicking');
@@ -221,7 +229,7 @@ function questionFour(index) {
     // Question and Options array
     const questions = [
         {
-            "question4": "Which of the following is the correct way to start a formal letter?",
+            "question4": "Choose the correct way to address in a formal letter?",
             "options": {
                 "a": "To whom it may concern",
                 "b": "Dear Sir/Madam",
@@ -243,6 +251,8 @@ function questionFour(index) {
         score++;
         counter.innerHTML = score + ' / ' + qbox.length;
     } else {
+        qOptions[3].children[1].style.backgroundColor = 'green';
+        qOptions[3].children[1].style.color = 'white';
         index.style.backgroundColor = 'red';
         index.style.color = 'white';
         q4.classList.add('noClicking');
@@ -257,7 +267,7 @@ function questionFive(index) {
     // Question and Options array
     const questions = [
         {
-            "question5": "What HTML attribute prevents a form from submitting an empty field(s)?",
+            "question5": "Which is used for input field validation?",
             "options": {
                 "a": "prevent",
                 "b": "restrict",
@@ -279,6 +289,8 @@ function questionFive(index) {
         score++;
         counter.innerHTML = score + ' / ' + qbox.length;
     } else {
+        qOptions[4].children[2].style.backgroundColor = 'green';
+        qOptions[4].children[2].style.color = 'white';
         index.style.backgroundColor = 'red';
         index.style.color = 'white';
         q5.classList.add('noClicking');
