@@ -119,11 +119,11 @@ function questionOne(index) {
         {
             "question1": "What is HTML",
             "options": {
-                "a": "Hypertext Tranfer Protocol",
+                "a": "Hypertext Markup Language",
                 "b": "Hypertext Transmission Protocol",
                 "c": "Hypertext Technical Protocal"
             },
-            "answer": "Hypertext Tranfer Protocol"
+            "answer": "Hypertext Markup Language"
         }
     ];
 
